@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		C2C930318436C1F6597C60AA /* Pods_SpectClientApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45D81B9538B5C7243B891CB /* Pods_SpectClientApp.framework */; };
 		C42A8FFB20F9747B006E36ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A8FFA20F9747B006E36ED /* AppDelegate.swift */; };
-		C42A8FFD20F9747B006E36ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A8FFC20F9747B006E36ED /* ViewController.swift */; };
+		C42A8FFD20F9747B006E36ED /* SCAAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A8FFC20F9747B006E36ED /* SCAAccessViewController.swift */; };
 		C42A900020F9747B006E36ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42A8FFE20F9747B006E36ED /* Main.storyboard */; };
 		C42A900220F9747C006E36ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42A900120F9747C006E36ED /* Assets.xcassets */; };
 		C42A900520F9747C006E36ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42A900320F9747C006E36ED /* LaunchScreen.storyboard */; };
 		C42A901020F9747C006E36ED /* SpectClientAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A900F20F9747C006E36ED /* SpectClientAppTests.swift */; };
 		C42A901B20F9747C006E36ED /* SpectClientAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A901A20F9747C006E36ED /* SpectClientAppUITests.swift */; };
+		C4C115EA20F9D73B00D7A5BA /* SCAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C115E920F9D73B00D7A5BA /* SCAConstants.swift */; };
+		C4C115EC20F9E06E00D7A5BA /* SCAGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C115EB20F9E06E00D7A5BA /* SCAGreenButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		B45D81B9538B5C7243B891CB /* Pods_SpectClientApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpectClientApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42A8FF720F9747B006E36ED /* SpectClientApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpectClientApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42A8FFA20F9747B006E36ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C42A8FFC20F9747B006E36ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C42A8FFC20F9747B006E36ED /* SCAAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAAccessViewController.swift; sourceTree = "<group>"; };
 		C42A8FFF20F9747B006E36ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C42A900120F9747C006E36ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C42A900420F9747C006E36ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		C42A901620F9747C006E36ED /* SpectClientAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectClientAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42A901A20F9747C006E36ED /* SpectClientAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectClientAppUITests.swift; sourceTree = "<group>"; };
 		C42A901C20F9747C006E36ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C115E920F9D73B00D7A5BA /* SCAConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAConstants.swift; sourceTree = "<group>"; };
+		C4C115EB20F9E06E00D7A5BA /* SCAGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAGreenButton.swift; sourceTree = "<group>"; };
 		CF99417AFD63CD4D8B3C714E /* Pods-SpectClientApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpectClientApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpectClientApp/Pods-SpectClientApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +155,7 @@
 		C4C115E320F9750C00D7A5BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C4C115E920F9D73B00D7A5BA /* SCAConstants.swift */,
 				C42A8FFA20F9747B006E36ED /* AppDelegate.swift */,
 				C42A8FFE20F9747B006E36ED /* Main.storyboard */,
 				C42A900120F9747C006E36ED /* Assets.xcassets */,
@@ -169,6 +174,7 @@
 		C4C115E520F9751B00D7A5BA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C4C115EB20F9E06E00D7A5BA /* SCAGreenButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,7 +182,7 @@
 		C4C115E620F9752100D7A5BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C42A8FFC20F9747B006E36ED /* ViewController.swift */,
+				C42A8FFC20F9747B006E36ED /* SCAAccessViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -385,8 +391,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42A8FFD20F9747B006E36ED /* ViewController.swift in Sources */,
+				C4C115EA20F9D73B00D7A5BA /* SCAConstants.swift in Sources */,
+				C42A8FFD20F9747B006E36ED /* SCAAccessViewController.swift in Sources */,
 				C42A8FFB20F9747B006E36ED /* AppDelegate.swift in Sources */,
+				C4C115EC20F9E06E00D7A5BA /* SCAGreenButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +571,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QUDL288CP;
 				INFOPLIST_FILE = SpectClientApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,6 +591,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QUDL288CP;
 				INFOPLIST_FILE = SpectClientApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
