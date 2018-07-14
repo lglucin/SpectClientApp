@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2C930318436C1F6597C60AA /* Pods_SpectClientApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45D81B9538B5C7243B891CB /* Pods_SpectClientApp.framework */; };
+		C42A8FFB20F9747B006E36ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A8FFA20F9747B006E36ED /* AppDelegate.swift */; };
+		C42A8FFD20F9747B006E36ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A8FFC20F9747B006E36ED /* ViewController.swift */; };
+		C42A900020F9747B006E36ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42A8FFE20F9747B006E36ED /* Main.storyboard */; };
+		C42A900220F9747C006E36ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42A900120F9747C006E36ED /* Assets.xcassets */; };
+		C42A900520F9747C006E36ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42A900320F9747C006E36ED /* LaunchScreen.storyboard */; };
+		C42A901020F9747C006E36ED /* SpectClientAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A900F20F9747C006E36ED /* SpectClientAppTests.swift */; };
+		C42A901B20F9747C006E36ED /* SpectClientAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A901A20F9747C006E36ED /* SpectClientAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C42A900C20F9747C006E36ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C42A8FEF20F9747B006E36ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C42A8FF620F9747B006E36ED;
+			remoteInfo = SpectClientApp;
+		};
+		C42A901720F9747C006E36ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C42A8FEF20F9747B006E36ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C42A8FF620F9747B006E36ED;
+			remoteInfo = SpectClientApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7363D55AC8AA8D6584162E2F /* Pods-SpectClientApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpectClientApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpectClientApp/Pods-SpectClientApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B45D81B9538B5C7243B891CB /* Pods_SpectClientApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpectClientApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42A8FF720F9747B006E36ED /* SpectClientApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpectClientApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42A8FFA20F9747B006E36ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C42A8FFC20F9747B006E36ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C42A8FFF20F9747B006E36ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C42A900120F9747C006E36ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C42A900420F9747C006E36ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C42A900620F9747C006E36ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42A900B20F9747C006E36ED /* SpectClientAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectClientAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42A900F20F9747C006E36ED /* SpectClientAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectClientAppTests.swift; sourceTree = "<group>"; };
+		C42A901120F9747C006E36ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42A901620F9747C006E36ED /* SpectClientAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectClientAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42A901A20F9747C006E36ED /* SpectClientAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectClientAppUITests.swift; sourceTree = "<group>"; };
+		C42A901C20F9747C006E36ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF99417AFD63CD4D8B3C714E /* Pods-SpectClientApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpectClientApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpectClientApp/Pods-SpectClientApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C42A8FF420F9747B006E36ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C930318436C1F6597C60AA /* Pods_SpectClientApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42A900820F9747C006E36ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42A901320F9747C006E36ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037F41AEE9E4BDB26A45C407 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7363D55AC8AA8D6584162E2F /* Pods-SpectClientApp.debug.xcconfig */,
+				CF99417AFD63CD4D8B3C714E /* Pods-SpectClientApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D78062A9E1808415C9CE2FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B45D81B9538B5C7243B891CB /* Pods_SpectClientApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C42A8FEE20F9747B006E36ED = {
+			isa = PBXGroup;
+			children = (
+				C42A8FF920F9747B006E36ED /* SpectClientApp */,
+				C42A900E20F9747C006E36ED /* SpectClientAppTests */,
+				C42A901920F9747C006E36ED /* SpectClientAppUITests */,
+				C42A8FF820F9747B006E36ED /* Products */,
+				037F41AEE9E4BDB26A45C407 /* Pods */,
+				5D78062A9E1808415C9CE2FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C42A8FF820F9747B006E36ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C42A8FF720F9747B006E36ED /* SpectClientApp.app */,
+				C42A900B20F9747C006E36ED /* SpectClientAppTests.xctest */,
+				C42A901620F9747C006E36ED /* SpectClientAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C42A8FF920F9747B006E36ED /* SpectClientApp */ = {
+			isa = PBXGroup;
+			children = (
+				C4C115E620F9752100D7A5BA /* Controller */,
+				C42A900620F9747C006E36ED /* Info.plist */,
+				C4C115E420F9751300D7A5BA /* Model */,
+				C4C115E320F9750C00D7A5BA /* Supporting Files */,
+				C4C115E520F9751B00D7A5BA /* View */,
+			);
+			path = SpectClientApp;
+			sourceTree = "<group>";
+		};
+		C42A900E20F9747C006E36ED /* SpectClientAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C42A900F20F9747C006E36ED /* SpectClientAppTests.swift */,
+				C42A901120F9747C006E36ED /* Info.plist */,
+			);
+			path = SpectClientAppTests;
+			sourceTree = "<group>";
+		};
+		C42A901920F9747C006E36ED /* SpectClientAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C42A901A20F9747C006E36ED /* SpectClientAppUITests.swift */,
+				C42A901C20F9747C006E36ED /* Info.plist */,
+			);
+			path = SpectClientAppUITests;
+			sourceTree = "<group>";
+		};
+		C4C115E320F9750C00D7A5BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C42A8FFA20F9747B006E36ED /* AppDelegate.swift */,
+				C42A8FFE20F9747B006E36ED /* Main.storyboard */,
+				C42A900120F9747C006E36ED /* Assets.xcassets */,
+				C42A900320F9747C006E36ED /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4C115E420F9751300D7A5BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4C115E520F9751B00D7A5BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4C115E620F9752100D7A5BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C42A8FFC20F9747B006E36ED /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C42A8FF620F9747B006E36ED /* SpectClientApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42A901F20F9747C006E36ED /* Build configuration list for PBXNativeTarget "SpectClientApp" */;
+			buildPhases = (
+				F172E63A77A0A49294FB5C68 /* [CP] Check Pods Manifest.lock */,
+				C42A8FF320F9747B006E36ED /* Sources */,
+				C42A8FF420F9747B006E36ED /* Frameworks */,
+				C42A8FF520F9747B006E36ED /* Resources */,
+				AAD2AA4E8AEAEA873529221C /* [CP] Embed Pods Frameworks */,
+				292DEE8C4966ADA2668EF13D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpectClientApp;
+			productName = SpectClientApp;
+			productReference = C42A8FF720F9747B006E36ED /* SpectClientApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C42A900A20F9747C006E36ED /* SpectClientAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42A902220F9747C006E36ED /* Build configuration list for PBXNativeTarget "SpectClientAppTests" */;
+			buildPhases = (
+				C42A900720F9747C006E36ED /* Sources */,
+				C42A900820F9747C006E36ED /* Frameworks */,
+				C42A900920F9747C006E36ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C42A900D20F9747C006E36ED /* PBXTargetDependency */,
+			);
+			name = SpectClientAppTests;
+			productName = SpectClientAppTests;
+			productReference = C42A900B20F9747C006E36ED /* SpectClientAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C42A901520F9747C006E36ED /* SpectClientAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42A902520F9747C006E36ED /* Build configuration list for PBXNativeTarget "SpectClientAppUITests" */;
+			buildPhases = (
+				C42A901220F9747C006E36ED /* Sources */,
+				C42A901320F9747C006E36ED /* Frameworks */,
+				C42A901420F9747C006E36ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C42A901820F9747C006E36ED /* PBXTargetDependency */,
+			);
+			name = SpectClientAppUITests;
+			productName = SpectClientAppUITests;
+			productReference = C42A901620F9747C006E36ED /* SpectClientAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C42A8FEF20F9747B006E36ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Spect Inc.";
+				TargetAttributes = {
+					C42A8FF620F9747B006E36ED = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					C42A900A20F9747C006E36ED = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C42A8FF620F9747B006E36ED;
+					};
+					C42A901520F9747C006E36ED = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C42A8FF620F9747B006E36ED;
+					};
+				};
+			};
+			buildConfigurationList = C42A8FF220F9747B006E36ED /* Build configuration list for PBXProject "SpectClientApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C42A8FEE20F9747B006E36ED;
+			productRefGroup = C42A8FF820F9747B006E36ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C42A8FF620F9747B006E36ED /* SpectClientApp */,
+				C42A900A20F9747C006E36ED /* SpectClientAppTests */,
+				C42A901520F9747C006E36ED /* SpectClientAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C42A8FF520F9747B006E36ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42A900520F9747C006E36ED /* LaunchScreen.storyboard in Resources */,
+				C42A900220F9747C006E36ED /* Assets.xcassets in Resources */,
+				C42A900020F9747B006E36ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42A900920F9747C006E36ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42A901420F9747C006E36ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		292DEE8C4966ADA2668EF13D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpectClientApp/Pods-SpectClientApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAD2AA4E8AEAEA873529221C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpectClientApp/Pods-SpectClientApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/M13ProgressSuite/M13ProgressSuite.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Onboard/Onboard.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13ProgressSuite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Onboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpectClientApp/Pods-SpectClientApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F172E63A77A0A49294FB5C68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpectClientApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C42A8FF320F9747B006E36ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42A8FFD20F9747B006E36ED /* ViewController.swift in Sources */,
+				C42A8FFB20F9747B006E36ED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42A900720F9747C006E36ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42A901020F9747C006E36ED /* SpectClientAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42A901220F9747C006E36ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42A901B20F9747C006E36ED /* SpectClientAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C42A900D20F9747C006E36ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C42A8FF620F9747B006E36ED /* SpectClientApp */;
+			targetProxy = C42A900C20F9747C006E36ED /* PBXContainerItemProxy */;
+		};
+		C42A901820F9747C006E36ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C42A8FF620F9747B006E36ED /* SpectClientApp */;
+			targetProxy = C42A901720F9747C006E36ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C42A8FFE20F9747B006E36ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C42A8FFF20F9747B006E36ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C42A900320F9747C006E36ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C42A900420F9747C006E36ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C42A901D20F9747C006E36ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C42A901E20F9747C006E36ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C42A902020F9747C006E36ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7363D55AC8AA8D6584162E2F /* Pods-SpectClientApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QUDL288CP;
+				INFOPLIST_FILE = SpectClientApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spect.SpectClientApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C42A902120F9747C006E36ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF99417AFD63CD4D8B3C714E /* Pods-SpectClientApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QUDL288CP;
+				INFOPLIST_FILE = SpectClientApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spect.SpectClientApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C42A902320F9747C006E36ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QUDL288CP;
+				INFOPLIST_FILE = SpectClientAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spect.SpectClientAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpectClientApp.app/SpectClientApp";
+			};
+			name = Debug;
+		};
+		C42A902420F9747C006E36ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QUDL288CP;
+				INFOPLIST_FILE = SpectClientAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spect.SpectClientAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpectClientApp.app/SpectClientApp";
+			};
+			name = Release;
+		};
+		C42A902620F9747C006E36ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QUDL288CP;
+				INFOPLIST_FILE = SpectClientAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spect.SpectClientAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpectClientApp;
+			};
+			name = Debug;
+		};
+		C42A902720F9747C006E36ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QUDL288CP;
+				INFOPLIST_FILE = SpectClientAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spect.SpectClientAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpectClientApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C42A8FF220F9747B006E36ED /* Build configuration list for PBXProject "SpectClientApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42A901D20F9747C006E36ED /* Debug */,
+				C42A901E20F9747C006E36ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42A901F20F9747C006E36ED /* Build configuration list for PBXNativeTarget "SpectClientApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42A902020F9747C006E36ED /* Debug */,
+				C42A902120F9747C006E36ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42A902220F9747C006E36ED /* Build configuration list for PBXNativeTarget "SpectClientAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42A902320F9747C006E36ED /* Debug */,
+				C42A902420F9747C006E36ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42A902520F9747C006E36ED /* Build configuration list for PBXNativeTarget "SpectClientAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42A902620F9747C006E36ED /* Debug */,
+				C42A902720F9747C006E36ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C42A8FEF20F9747B006E36ED /* Project object */;
+}

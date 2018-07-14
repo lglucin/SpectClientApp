@@ -1,0 +1,77 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - Crashlytics (3.10.4):
+    - Fabric (~> 1.7.9)
+  - Fabric (1.7.9)
+  - FirebaseAnalytics (3.9.0):
+    - FirebaseCore (~> 3.6)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.6.0):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.10):
+    - FirebaseCore (~> 3.6)
+  - Google/Analytics (3.1.0):
+    - Google/Core
+    - GoogleAnalytics (~> 3.12)
+  - Google/Core (3.1.0):
+    - FirebaseAnalytics (~> 3.2)
+  - GoogleAnalytics (3.17.0)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/NSData+zlib (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - M13ProgressSuite (1.2.9)
+  - NVActivityIndicatorView (4.3.0):
+    - NVActivityIndicatorView/Presenter (= 4.3.0)
+  - NVActivityIndicatorView/Presenter (4.3.0)
+  - Onboard (2.3.3)
+  - SCLAlertView (0.8)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - AlamofireImage (~> 3.3)
+  - Crashlytics
+  - Fabric
+  - Google/Analytics
+  - GoogleAnalytics
+  - M13ProgressSuite
+  - NVActivityIndicatorView
+  - Onboard
+  - SCLAlertView (from `https://github.com/vikmeup/SCLAlertView-Swift.git`)
+  - SnapKit (~> 4.0.0)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  SCLAlertView:
+    :git: https://github.com/vikmeup/SCLAlertView-Swift.git
+
+CHECKOUT OPTIONS:
+  SCLAlertView:
+    :commit: de579dc3d0b1217074796dcb5015bef01aaf8a1b
+    :git: https://github.com/vikmeup/SCLAlertView-Swift.git
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  Crashlytics: 915a7787b84f635fb2a81f92a90e265c2c413f76
+  Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
+  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
+  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
+  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  M13ProgressSuite: ea9f7263e73e9215e6849dfa54e29ee0ad6a145c
+  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
+  Onboard: 4d6e943e20bdd6bc229df967a347dd7514bc2a6f
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: ed5fbfd47d67a1727b894dfb66215f73fe61dd07
+
+COCOAPODS: 1.4.0
