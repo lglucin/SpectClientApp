@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             [NSAttributedStringKey.foregroundColor: UIColor.white,
              NSAttributedStringKey.font: SCAConstants.descriptionFont]
         UINavigationBar.appearance().isTranslucent = false
+        UIApplication.shared.statusBarStyle = .lightContent
+
         return true
     }
 

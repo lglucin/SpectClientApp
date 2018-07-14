@@ -47,7 +47,7 @@ class SCAAccessViewController : UIViewController {
 
         accessCodeLabel.text = accessCodeText
         accessCodeLabel.textAlignment = .left
-        accessCodeLabel.font = SCAConstants.descriptionFont?.withSmallCaps
+        accessCodeLabel.font = SCAConstants.descriptionFont?.smallCapsFont()
         accessCodeLabel.sizeToFit()
         // TODO: Make this the type of font that is all caps but not really.
         accessCodeLabel.textColor = SCAConstants.subHeaderColor
@@ -105,7 +105,7 @@ class SCAAccessViewController : UIViewController {
             make.left.equalTo(view).offset(SCAConstants.standardSpacing)
             make.right.equalTo(view).offset(-SCAConstants.standardSpacing)
             loginButton.titleLabel?.sizeToFit()
-            make.height.equalTo((loginButton.titleLabel?.frame.height)! * 4)
+            make.height.equalTo((loginButton.titleLabel?.frame.height)! * 3)
         }
     }
 }
@@ -125,4 +125,22 @@ extension UIFont {
         let smallCapsDescriptor = self.fontDescriptor.addingAttributes([UIFontDescriptor.AttributeName.featureSettings : features])
         return UIFont(descriptor: smallCapsDescriptor, size: pointSize)
     }
+
+    func smallCapsFont() -> UIFont {
+        let attributes: [UIFontDescriptor.FeatureKey: Any] = [
+            .featureIdentifier: kLowerCaseType,
+            .typeIdentifier: kLowerCaseSmallCapsSelector
+        ]
+        let descriptor = UIFontDescriptor(name:"Didot", size:18).addingAttributes([
+            .featureSettings: [attributes],
+            .name: fontName
+            ])
+//
+//        let descriptor = fontDescriptor.addingAttributes([
+//            .featureSettings: [attributes],
+//            .name: fontName
+//            ])
+        return UIFont(descriptor: descriptor, size: pointSize)
+    }
+
 }
