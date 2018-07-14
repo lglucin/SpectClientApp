@@ -17,6 +17,7 @@
 		C42A901B20F9747C006E36ED /* SpectClientAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A901A20F9747C006E36ED /* SpectClientAppUITests.swift */; };
 		C4C115EA20F9D73B00D7A5BA /* SCAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C115E920F9D73B00D7A5BA /* SCAConstants.swift */; };
 		C4C115EC20F9E06E00D7A5BA /* SCAGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C115EB20F9E06E00D7A5BA /* SCAGreenButton.swift */; };
+		C4C115EE20FAA14700D7A5BA /* SCAUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C115ED20FAA14700D7A5BA /* SCAUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		C42A901C20F9747C006E36ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4C115E920F9D73B00D7A5BA /* SCAConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAConstants.swift; sourceTree = "<group>"; };
 		C4C115EB20F9E06E00D7A5BA /* SCAGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAGreenButton.swift; sourceTree = "<group>"; };
+		C4C115ED20FAA14700D7A5BA /* SCAUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAUtilities.swift; sourceTree = "<group>"; };
 		CF99417AFD63CD4D8B3C714E /* Pods-SpectClientApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpectClientApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpectClientApp/Pods-SpectClientApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,11 +157,12 @@
 		C4C115E320F9750C00D7A5BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C4C115E920F9D73B00D7A5BA /* SCAConstants.swift */,
 				C42A8FFA20F9747B006E36ED /* AppDelegate.swift */,
-				C42A8FFE20F9747B006E36ED /* Main.storyboard */,
 				C42A900120F9747C006E36ED /* Assets.xcassets */,
 				C42A900320F9747C006E36ED /* LaunchScreen.storyboard */,
+				C42A8FFE20F9747B006E36ED /* Main.storyboard */,
+				C4C115E920F9D73B00D7A5BA /* SCAConstants.swift */,
+				C4C115ED20FAA14700D7A5BA /* SCAUtilities.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4C115EA20F9D73B00D7A5BA /* SCAConstants.swift in Sources */,
+				C4C115EE20FAA14700D7A5BA /* SCAUtilities.swift in Sources */,
 				C42A8FFD20F9747B006E36ED /* SCAAccessViewController.swift in Sources */,
 				C42A8FFB20F9747B006E36ED /* AppDelegate.swift in Sources */,
 				C4C115EC20F9E06E00D7A5BA /* SCAGreenButton.swift in Sources */,

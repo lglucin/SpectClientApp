@@ -15,7 +15,7 @@ class SCAAccessViewController : UIViewController {
     private let welcomeText = "Welcome!"
     private let instructionsText = "Please Login to Spect Below"
     private let accessCodeText = "Access Code"
-    private let enterAccessCodeText = "Enter Access Code"
+    private let enterAccessCodeText = "Enter access code"
     private let loginText = "Login"
 
     // UI.
@@ -47,25 +47,27 @@ class SCAAccessViewController : UIViewController {
 
         accessCodeLabel.text = accessCodeText
         accessCodeLabel.textAlignment = .left
-        accessCodeLabel.font = SCAConstants.descriptionFont?.smallCapsFont()
+        accessCodeLabel.font = SCAConstants.descriptionFont?.withSmallCaps
         accessCodeLabel.sizeToFit()
         // TODO: Make this the type of font that is all caps but not really.
         accessCodeLabel.textColor = SCAConstants.subHeaderColor
         view.addSubview(accessCodeLabel)
 
         accessCodeTextField.placeholder = enterAccessCodeText
-        accessCodeTextField.font = SCAConstants.descriptionFont
+        accessCodeTextField.font = SCAConstants.mediumDescriptionFont
         accessCodeTextField.textColor = SCAConstants.textColor
+        accessCodeTextField.isSecureTextEntry = true
         let border = CALayer()
-        let width = CGFloat(2.0)
-        border.borderColor = UIColor.darkGray.cgColor
+        let width = CGFloat(1)
+        border.borderColor = SCAConstants.textFieldUnderlineColor.cgColor
+        accessCodeTextField.sizeToFit()
         border.frame = CGRect(x: 0,
                               y: accessCodeTextField.frame.size.height - width,
-                              width: accessCodeTextField.frame.size.width,
-                              height: accessCodeTextField.frame.size.height)
+                              width: view.frame.width - SCAConstants.doubleStandardSpacing,
+                              height: 1)
         border.borderWidth = width
         accessCodeTextField.layer.addSublayer(border)
-        accessCodeTextField.layer.masksToBounds = true
+        accessCodeTextField.layer.masksToBounds = false
         view.addSubview(accessCodeTextField)
 
         loginButton.setTitle(loginText, for: .normal)
@@ -91,12 +93,14 @@ class SCAAccessViewController : UIViewController {
 
         accessCodeLabel.snp.makeConstraints { (make) in
             make.left.equalTo(view).offset(SCAConstants.standardSpacing)
-            make.centerY.equalTo(view)
+            make.centerY.equalTo(view).offset(-accessCodeLabel.frame.height)
         }
 
         accessCodeTextField.snp.makeConstraints { (make) in
             make.left.equalTo(view).offset(SCAConstants.standardSpacing)
             make.top.equalTo(accessCodeLabel.snp.bottom).offset(SCAConstants.smallMargin)
+            accessCodeTextField.sizeToFit()
+            make.height.equalTo(accessCodeLabel.frame.height)
         }
 
         loginButton.snp.makeConstraints { (make) in
@@ -108,39 +112,4 @@ class SCAAccessViewController : UIViewController {
             make.height.equalTo((loginButton.titleLabel?.frame.height)! * 3)
         }
     }
-}
-
-extension UIFont {
-
-    var withSmallCaps: UIFont {
-        let upperCaseFeature = [
-            UIFontDescriptor.FeatureKey.featureIdentifier : kUpperCaseType,
-            UIFontDescriptor.FeatureKey.typeIdentifier : kUpperCaseSmallCapsSelector
-        ]
-        let lowerCaseFeature = [
-            UIFontDescriptor.FeatureKey.featureIdentifier : kLowerCaseType,
-            UIFontDescriptor.FeatureKey.typeIdentifier : kLowerCaseSmallCapsSelector
-        ]
-        let features = [upperCaseFeature, lowerCaseFeature]
-        let smallCapsDescriptor = self.fontDescriptor.addingAttributes([UIFontDescriptor.AttributeName.featureSettings : features])
-        return UIFont(descriptor: smallCapsDescriptor, size: pointSize)
-    }
-
-    func smallCapsFont() -> UIFont {
-        let attributes: [UIFontDescriptor.FeatureKey: Any] = [
-            .featureIdentifier: kLowerCaseType,
-            .typeIdentifier: kLowerCaseSmallCapsSelector
-        ]
-        let descriptor = UIFontDescriptor(name:"Didot", size:18).addingAttributes([
-            .featureSettings: [attributes],
-            .name: fontName
-            ])
-//
-//        let descriptor = fontDescriptor.addingAttributes([
-//            .featureSettings: [attributes],
-//            .name: fontName
-//            ])
-        return UIFont(descriptor: descriptor, size: pointSize)
-    }
-
 }
