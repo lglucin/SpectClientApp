@@ -19,6 +19,9 @@ class SCAConstants {
     static let iconSquareDimension = 30
 
     // Fonts
+    // NOTE: Avenir Next was chosen rather than the style guide "Lato" for two reasons:
+    //   - Avenir Next is compatible with small caps (see SCAAccessView).
+    //   - Did not want to waste time importing the Lato font.
     static let bigHeaderFont = UIFont(name: "Avenir Next", size: 40)
     static let descriptionFont = UIFont(name: "Avenir Next", size: 20)
     static let mediumDescriptionFont = UIFont(name: "Avenir Next", size: 25)
