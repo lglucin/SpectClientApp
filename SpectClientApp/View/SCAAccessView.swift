@@ -53,6 +53,9 @@ class SCAAccessView: UIView {
         accessCodeTextField.font = SCAConstants.mediumDescriptionFont
         accessCodeTextField.textColor = SCAConstants.textColor
         accessCodeTextField.isSecureTextEntry = true
+        accessCodeTextField.returnKeyType = .next
+        accessCodeTextField.becomeFirstResponder()
+        accessCodeTextField.enablesReturnKeyAutomatically = true
         let border = CALayer()
         let width = CGFloat(1)
         border.borderColor = SCAConstants.textFieldUnderlineColor.cgColor
@@ -93,7 +96,7 @@ class SCAAccessView: UIView {
 
         accessCodeLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self).offset(SCAConstants.standardSpacing)
-            make.centerY.equalTo(self).offset(-accessCodeLabel.frame.height)
+            make.top.equalTo(instructionsLabel.snp.bottom).offset(SCAConstants.standardSpacing)
         }
 
         accessCodeTextField.snp.makeConstraints { (make) in
