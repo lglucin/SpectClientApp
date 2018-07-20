@@ -11,105 +11,53 @@ import SnapKit
 
 class SCAAccessViewController : UIViewController {
 
-    // Strings.
-    private let welcomeText = "Welcome!"
-    private let instructionsText = "Please Login to Spect Below"
-    private let accessCodeText = "Access Code"
-    private let enterAccessCodeText = "Enter access code"
-    private let loginText = "Login"
+    // Access Code
+    private var accessCode = "455B"
 
-    // UI.
-    private lazy var welcomeBackLabel = UILabel()
-    private lazy var instructionsLabel = UILabel()
-    private lazy var accessCodeLabel = UILabel()
-    private lazy var accessCodeTextField = UITextField()
-    private lazy var loginButton = SCAGreenButton()
+    // View.
+    private var accessView : SCAAccessView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = loginText
+        title = "Login"
 
-        // TODO: Set style for nav bar.
-        welcomeBackLabel.text = welcomeText
-        welcomeBackLabel.font = SCAConstants.bigHeaderFont
-        welcomeBackLabel.textColor = SCAConstants.bolderTextColor
-        welcomeBackLabel.sizeToFit()
-        welcomeBackLabel.textAlignment = .center
-        welcomeBackLabel.adjustsFontSizeToFitWidth = true
-        view.addSubview(welcomeBackLabel)
+        accessView = SCAAccessView(frame: view.frame)
+        accessView.loginButton.isUserInteractionEnabled = false
+        accessView.accessCodeTextField.delegate = self
+        accessView.accessCodeTextField.addTarget(self,
+                                                 action: #selector(self.textDidChange),
+                                                 for: .editingChanged)
 
-        instructionsLabel.text = instructionsText
-        instructionsLabel.font = SCAConstants.descriptionFont
-        instructionsLabel.textColor = SCAConstants.textColor
-        instructionsLabel.textAlignment = .center
-        instructionsLabel.adjustsFontSizeToFitWidth = true
-        view.addSubview(instructionsLabel)
+        view = accessView
 
-        accessCodeLabel.text = accessCodeText
-        accessCodeLabel.textAlignment = .left
-        accessCodeLabel.font = SCAConstants.descriptionFont?.withSmallCaps
-        accessCodeLabel.sizeToFit()
-        // TODO: Make this the type of font that is all caps but not really.
-        accessCodeLabel.textColor = SCAConstants.subHeaderColor
-        view.addSubview(accessCodeLabel)
-
-        accessCodeTextField.placeholder = enterAccessCodeText
-        accessCodeTextField.font = SCAConstants.mediumDescriptionFont
-        accessCodeTextField.textColor = SCAConstants.textColor
-        accessCodeTextField.isSecureTextEntry = true
-        let border = CALayer()
-        let width = CGFloat(1)
-        border.borderColor = SCAConstants.textFieldUnderlineColor.cgColor
-        accessCodeTextField.sizeToFit()
-        border.frame = CGRect(x: 0,
-                              y: accessCodeTextField.frame.size.height - width,
-                              width: view.frame.width - SCAConstants.doubleStandardSpacing,
-                              height: 1)
-        border.borderWidth = width
-        accessCodeTextField.layer.addSublayer(border)
-        accessCodeTextField.layer.masksToBounds = false
-        view.addSubview(accessCodeTextField)
-
-        loginButton.setTitle(loginText, for: .normal)
-        view.addSubview(loginButton)
-
-        setSnapkitConstraints()
+        let tap: UITapGestureRecognizer =
+            UITapGestureRecognizer(target: self,
+                                   action: #selector(self.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
 
-    private func setSnapkitConstraints() {
-        welcomeBackLabel.snp.makeConstraints { (make) in
-            if #available(iOS 11.0, *) {
-                make.top.equalTo(view.safeAreaLayoutGuide).offset(SCAConstants.doubleStandardSpacing)
-            } else {
-                make.top.equalTo(view).offset(SCAConstants.doubleStandardSpacing)
-            }
-            make.centerX.equalTo(view)
-        }
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
+    }
 
-        instructionsLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(welcomeBackLabel.snp.bottom).offset(SCAConstants.standardSpacing)
-            make.centerX.equalTo(view)
+    // Disable the login button unless the user types enough characters.
+    @objc private func textDidChange() {
+        guard let text = accessView.accessCodeTextField.text else {
+            accessView.loginButton.isUserInteractionEnabled = false
+            return
         }
+        if text.count >= accessCode.count {
+            accessView.loginButton.isUserInteractionEnabled = true
+        } else {
+            accessView.loginButton.isUserInteractionEnabled = false
+        }
+    }
+}
 
-        accessCodeLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(view).offset(SCAConstants.standardSpacing)
-            make.centerY.equalTo(view).offset(-accessCodeLabel.frame.height)
-        }
-
-        accessCodeTextField.snp.makeConstraints { (make) in
-            make.left.equalTo(view).offset(SCAConstants.standardSpacing)
-            make.top.equalTo(accessCodeLabel.snp.bottom).offset(SCAConstants.smallMargin)
-            accessCodeTextField.sizeToFit()
-            make.height.equalTo(accessCodeLabel.frame.height)
-        }
-
-        loginButton.snp.makeConstraints { (make) in
-            make.top.equalTo(accessCodeTextField.snp.bottom).offset(SCAConstants.doubleStandardSpacing)
-            make.centerX.equalTo(view)
-            make.left.equalTo(view).offset(SCAConstants.standardSpacing)
-            make.right.equalTo(view).offset(-SCAConstants.standardSpacing)
-            loginButton.titleLabel?.sizeToFit()
-            make.height.equalTo((loginButton.titleLabel?.frame.height)! * 3)
-        }
+extension SCAAccessViewController : UITextFieldDelegate {
+    // Dismiss the keyboard.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
