@@ -19,6 +19,7 @@
 		C4C115EC20F9E06E00D7A5BA /* SCAGreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C115EB20F9E06E00D7A5BA /* SCAGreenButton.swift */; };
 		C4C115EE20FAA14700D7A5BA /* SCAUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C115ED20FAA14700D7A5BA /* SCAUtilities.swift */; };
 		C4C81690210268640053A397 /* SCAAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8168F210268640053A397 /* SCAAccessView.swift */; };
+		C4C816922102AD4E0053A397 /* SCAAddPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C816912102AD4E0053A397 /* SCAAddPatientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C4C115EB20F9E06E00D7A5BA /* SCAGreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAGreenButton.swift; sourceTree = "<group>"; };
 		C4C115ED20FAA14700D7A5BA /* SCAUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAUtilities.swift; sourceTree = "<group>"; };
 		C4C8168F210268640053A397 /* SCAAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAAccessView.swift; sourceTree = "<group>"; };
+		C4C816912102AD4E0053A397 /* SCAAddPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAAddPatientViewController.swift; sourceTree = "<group>"; };
 		CF99417AFD63CD4D8B3C714E /* Pods-SpectClientApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpectClientApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpectClientApp/Pods-SpectClientApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +190,7 @@
 		C4C115E620F9752100D7A5BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C4C816912102AD4E0053A397 /* SCAAddPatientViewController.swift */,
 				C42A8FFC20F9747B006E36ED /* SCAAccessViewController.swift */,
 			);
 			path = Controller;
@@ -400,6 +403,7 @@
 				C4C115EA20F9D73B00D7A5BA /* SCAConstants.swift in Sources */,
 				C4C115EE20FAA14700D7A5BA /* SCAUtilities.swift in Sources */,
 				C4C81690210268640053A397 /* SCAAccessView.swift in Sources */,
+				C4C816922102AD4E0053A397 /* SCAAddPatientViewController.swift in Sources */,
 				C42A8FFD20F9747B006E36ED /* SCAAccessViewController.swift in Sources */,
 				C42A8FFB20F9747B006E36ED /* AppDelegate.swift in Sources */,
 				C4C115EC20F9E06E00D7A5BA /* SCAGreenButton.swift in Sources */,

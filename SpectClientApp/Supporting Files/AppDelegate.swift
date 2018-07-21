@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = SCAConstants.primaryGreen
         UINavigationBar.appearance().titleTextAttributes =
             [NSAttributedStringKey.foregroundColor: UIColor.white,
-             NSAttributedStringKey.font: SCAConstants.descriptionFont]
+             NSAttributedStringKey.font: SCAConstants.descriptionFontBold]
         UINavigationBar.appearance().isTranslucent = false
         UIApplication.shared.statusBarStyle = .lightContent
 

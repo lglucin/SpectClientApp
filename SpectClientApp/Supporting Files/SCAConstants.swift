@@ -24,6 +24,7 @@ class SCAConstants {
     //   - Did not want to waste time importing the Lato font.
     static let bigHeaderFont = UIFont(name: "Avenir Next", size: 40)
     static let descriptionFont = UIFont(name: "Avenir Next", size: 20)
+    static let descriptionFontBold = UIFont(name: "AvenirNext-DemiBold", size: 20)
     static let mediumDescriptionFont = UIFont(name: "Avenir Next", size: 25)
     static let mediumHeaderFont = UIFont(name: "Avenir Next", size: 30)
     static let smallDetailedFont = UIFont(name: "Avenir Next", size: 15)

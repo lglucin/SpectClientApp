@@ -16,14 +16,14 @@ class SCAGreenButton: UIButton {
     }
 
     func commonInit() {
-        self.titleLabel?.font = SCAConstants.descriptionFont
-        self.titleLabel?.textAlignment = .center
-        self.setTitleColor(.white, for: .normal)
-        self.setTitleColor(.gray, for: .disabled)
-        self.backgroundColor = SCAConstants.primaryGreen
-        self.layer.cornerRadius = 20
-        self.clipsToBounds = true
-        self.layer.borderWidth = 0
+        titleLabel?.font = SCAConstants.descriptionFontBold
+        titleLabel?.textAlignment = .center
+        setTitleColor(.white, for: .normal)
+        setTitleColor(.gray, for: .disabled)
+        backgroundColor = SCAConstants.primaryGreen
+        layer.cornerRadius = 20
+        clipsToBounds = true
+        layer.borderWidth = 0
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -34,16 +34,18 @@ class SCAGreenButton: UIButton {
     override open var isHighlighted: Bool {
         didSet {
             backgroundColor = isHighlighted
-                ? SCAConstants.primaryGreen
-                : SCAConstants.hoverOverButtonColor
+                ? SCAConstants.hoverOverButtonColor
+                : SCAConstants.primaryGreen
         }
     }
 
     override open var isUserInteractionEnabled: Bool {
         didSet {
             backgroundColor = isUserInteractionEnabled
-                ? SCAConstants.hoverOverButtonColor
+                ? SCAConstants.primaryGreen
                 : SCAConstants.disabledButtonColor
+            let titleColor : UIColor = isUserInteractionEnabled ? .white : #colorLiteral(red: 0.7585542798, green: 0.7629072666, blue: 0.7736519575, alpha: 1)
+            setTitleColor(titleColor, for: .normal)
         }
     }
 }
